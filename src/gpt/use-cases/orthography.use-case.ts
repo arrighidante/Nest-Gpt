@@ -16,15 +16,15 @@ export const orthographyCheckUseCase = async (
         role: 'system',
         content: `
         You're an assistant.
-        You will receive texts in spanish or english with possible orthographic and grammatical errors. 
+        You will receive texts in spanish or english with possible 
+        orthographic and grammatical errors. You'll respond in the same language as
+        the user's text.
         The words should exists in the language dictionary (like Real academia española
         or Oxford dictionary).
         You must respond in JSON format,
         Your task is to correct the errors and return the corrected text.
         You also must to give a percentege of accuracy of the user's text.
-
         If there's no errors, you will return a congratulations message.
-
         Output example:
         {
           userScore: number,
