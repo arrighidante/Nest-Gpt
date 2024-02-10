@@ -34,12 +34,20 @@ $ npm install
 
 ## Running the app
 
-```bash
-# development
-$ npm run start
 
+### 1. Get your own API KEY from https://platform.openai.com/api-keys
+
+### 2. Create the .env file based on .env.template and set your OpenAI API KEY
+
+### 3. Start the app
+```bash
 # watch mode
 $ npm run start:dev
+
+OR
+
+# development
+$ npm run start
 
 # production mode
 $ npm run start:prod
