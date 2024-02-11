@@ -13,6 +13,11 @@ async function bootstrap() {
   );
   app.enableCors(); // Enable CORS for all domains
 
-  await app.listen(3000);
+  const port = process.env.PORT || 3000;
+
+  await app.listen(port, () => {
+    console.log(`App listening on port: ${port}`);
+  });
+  // await app.listen(3000);
 }
 bootstrap();
